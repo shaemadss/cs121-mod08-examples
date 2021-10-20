@@ -38,6 +38,7 @@
 	"settings": {
 		"files.exclude": {
 			"**/.git": true,
+			"**/*.class": true,
 			"**/.svn": true,
 			"**/.hg": true,
 			"**/CVS": true,

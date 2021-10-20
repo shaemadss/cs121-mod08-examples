@@ -3,6 +3,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
+@SuppressWarnings("serial")
 public class BobButton extends JButton{
 	
 	private int myCount;

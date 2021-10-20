@@ -27,7 +27,6 @@ public class LayoutDemo {
 		tp.addTab("Grid", new GridPanel());
 		tp.addTab("Box X", new BoxPanelXAxis());
 		tp.addTab("Box Y", new BoxPanelYAxis());
-		tp.addTab("Complex", new ComplexPanel());
 		
 		frame.getContentPane().add(tp);
 

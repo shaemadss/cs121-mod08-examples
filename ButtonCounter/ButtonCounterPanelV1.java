@@ -1,12 +1,7 @@
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 
-import javax.swing.BoxLayout;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 
+@SuppressWarnings("serial")
 public class ButtonCounterPanelV1 extends JPanel {
 
 	

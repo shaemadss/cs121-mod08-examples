@@ -12,6 +12,7 @@ import javax.swing.JPanel;
  * @author lhindman
  *
  */
+@SuppressWarnings("serial")
 public class CounterPanel extends JPanel {
 	
 	/* Instance Variables */
