@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": "GUIBasics"
+		},
+		{
+			"path": "LayoutBasics"
+		},
+		{
+			"path": "WorkingWithText"
+		},
+		{
+			"path": "WorkingWithTimers"
+		},
+		{
+			"path": "AddingPolish"
+		},
+		{
+			"path": "ButtonCounter"
+		},
+		{
+			"path": "FancyPushCounter"
+		},
+		{
+			"path": "FancyColorChooser"
+		},
+		{
+			"path": "FancyCombinationLock"
+		},
+		{
+			"path": "FileReader"
+		},
+		{
+			"path": "FutureGUI"
+		},
+
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/.placeholder": true,
+			"**/.vscode": true
+		}
+	}
+}
