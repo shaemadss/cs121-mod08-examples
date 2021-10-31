@@ -1,4 +1,6 @@
 import javax.swing.JButton;
+import javax.swing.border.Border;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 
 import java.awt.Color;
@@ -38,9 +40,16 @@ public class DieButton extends JButton {
         this.myDieFaces = new ImageIcon[faceFiles.length];
         for (int i = 0; i < faceFiles.length; i++) {
                 myDieFaces[i] = new ImageIcon(faceFiles[i]);
+                System.out.println("Creating icon: " + faceFiles[i]);
+
         }
         this.setPreferredSize(new Dimension(112, 112));
         this.setBackground(Color.white);
+        
+        /* Remove the border */
+        this.setFocusPainted(false);
+        Border emptyBorder = BorderFactory.createEmptyBorder();
+        this.setBorder(emptyBorder);
 
         this.setIcon(myDieFaces[myDie.getFaceValue()]);
         this.addActionListener(new DieButtonListener());
