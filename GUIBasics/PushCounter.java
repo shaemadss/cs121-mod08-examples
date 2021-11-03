@@ -4,6 +4,7 @@ import javax.swing.JFrame;
  * Demonstrates a graphical user interface and an event listener.
  * 
  * @author Java Foundations
+ * @author CS121 Instructors
  */
 public class PushCounter
 {

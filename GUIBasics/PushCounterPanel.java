@@ -11,6 +11,7 @@ import javax.swing.JPanel;
  * Demonstrates a graphical user interface and an event listener.
  * 
  * @author Java Foundations
+ * @author CS121 Instructors
  */
 @SuppressWarnings("serial")
 public class PushCounterPanel extends JPanel
