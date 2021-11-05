@@ -22,22 +22,7 @@
 			"path": "SnakeEyes"
 		},
 		{
-			"path": "ButtonCounter"
-		},
-		{
-			"path": "FancyPushCounter"
-		},
-		{
-			"path": "FancyColorChooser"
-		},
-		{
-			"path": "FancyCombinationLock"
-		},
-		{
-			"path": "FileReader"
-		},
-		{
-			"path": "FutureGUI"
+			"path": "zyBooksExamples"
 		},
 
 	],

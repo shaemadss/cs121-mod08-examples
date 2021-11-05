@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+// import javax.swing.JFrame;
 
 /**
  * Demonstrates a graphical user interface and an event listener.
@@ -60,4 +61,5 @@ public class PushCounterPanel extends JPanel
          pushCountLabel.setText("Pushes: " + count);
       }
    }
+
 }
