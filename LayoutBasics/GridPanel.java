@@ -22,7 +22,7 @@ public class GridPanel extends JPanel
 	{
 		setLayout(new GridLayout(2, 3));		
 
-		JButton[] buttons = new JButton[5];
+		JButton[] buttons = new JButton[15];
 		
 		for(int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton("BUTTON " + (i + 1));

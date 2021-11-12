@@ -61,11 +61,17 @@ public class FahrenheitPanel extends JPanel
 			// Get the text from the text field
 			String text = fahrenheit.getText();
 
-			double fahrenheitTemp = Double.parseDouble(text);
-			double celsiusTemp = (fahrenheitTemp - 32) * 5.0 / 9;
-			String result = String.format("%6.2f", celsiusTemp);
+			try {
+				double fahrenheitTemp = Double.parseDouble(text);
+				double celsiusTemp = (fahrenheitTemp - 32) * 5.0 / 9;
+				String result = String.format("%6.2f", celsiusTemp);
+	
+				resultLabel.setText(result);
+			} catch (NumberFormatException e) {
+				JOptionPane.showMessageDialog(null, "Please enter numbers only");
+				fahrenheit.setText("");
+			}
 
-			resultLabel.setText(result);
 		}
 	}
 }

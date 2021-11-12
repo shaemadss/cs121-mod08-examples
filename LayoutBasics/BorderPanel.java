@@ -24,7 +24,12 @@ public class BorderPanel extends JPanel
       JButton b4 = new JButton("EAST");
       JButton b5 = new JButton("WEST");
 
-      add(b1, BorderLayout.CENTER);
+      JPanel centerSubPanel = new JPanel();
+      centerSubPanel.add(b1);
+      centerSubPanel.setBackground(Color.GREEN);
+
+
+      add(centerSubPanel, BorderLayout.CENTER);
       add(b2, BorderLayout.NORTH);
       add(b3, BorderLayout.SOUTH);
       add(b4, BorderLayout.EAST);

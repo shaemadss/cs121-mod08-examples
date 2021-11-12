@@ -10,10 +10,7 @@
 			"path": "WorkingWithText"
 		},
 		{
-			"path": "WorkingWithTimers"
-		},
-		{
-			"path": "AddingPolish"
+			"path": "AddingComponents"
 		},
 		{
 			"path": "DieButton"
