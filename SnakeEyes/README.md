@@ -2,7 +2,7 @@
 ### Problem Description
 In this activity you will use the DieButton class to create a simple dice game. The game consists of a single player, playing against the house. The player roles a pair of six sided dice and they earn a point if the sum of the dice is 7 or if doubles are rolled (except snake eyes). The house earns a point for all other rolls (except snake eyes).  If the player rolls snake eyes, the game ends and the player with the highest score wins.
 
-<img src="DieButtonTesterScreenshot.png" alt="Die Button Tester Screenshot">
+<img src="SnakeEyesScreenshot.png" alt="Snake Eyes Screenshot">
 
 ### Requirements
 The screenshot above shows a sample GUI for this activity.  You may use the same layout or design your own.  Either way, your SnakeEyes game must satisfy the following requirements
