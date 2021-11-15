@@ -14,10 +14,3 @@ The screenshot above shows a sample GUI for this activity.  You may use the same
 + **JOptionPane** A JOptionPane should be used to display the winner when the game is over.
 
 
-### Error Handling
-The String[] that is passed to the DieButton constructor should always contain at least 1 more image file than the specified number of sides. This is because the image at index 0 should be a blank die image.  When the constructor is called, perform a check to ensure this is in-fact that case. If not, throw a new RuntimeException using the code below.
-
-```
-throw new java.lang.RuntimeException("Error: Die has more sides than faces");
-```
-
