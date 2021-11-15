@@ -2,7 +2,9 @@
 ### Problem Description
 In this activity we will being using the Die class that we developed earlier in the the semester. This is an example of code reuse which is a core principle of Object Oriented Programming. For this activity you will create a class named DieButton that will extend the JButton class and will have a Die object as an instance variable to maintain state. The DieButton will contain a private inner class (child class) that will implement the ActionListener interface. Each time the button is clicked this listener will roll the internal Die and update the icon on the face of the button with a graphical representation of the face value of the Die. The constructor for the DieButton class takes an int for the desired number of sides and a String[] with the files paths of png files with the indexes corresponding to the die fave values. The image at index 0 will be used to represent a blank die.
 
-<img src="images/Lab08-DynamicDie.png" alt="Dynamic Die Screenshot">
+To test this DieButton class, you will write a DieButtonTester driver class that will setup a JFrame and well as a top level master panel. The code will then instantiate a new instance of the DieButton class with 6 sides using the images provided in the d6-images folder.
+
+<img src="DieButtonTesterScreenshot.png" alt="Die Button Tester Screenshot">
 
 ### Requirements
 The screenshot above shows a sample GUI for this activity.  You may use the same layout or design your own.  Either way, your GUI must contain the following components
