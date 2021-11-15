@@ -124,9 +124,12 @@ public class RGBSliderDemo extends JPanel {
     private class ColorSelectorListener implements ChangeListener {
 
         @Override
-        public void stateChanged(ChangeEvent arg0) {
-            updateColorDisplayPanel();
-
+        public void stateChanged(ChangeEvent e) {
+            JSlider source = (JSlider) e.getSource();
+            if (source.getValueIsAdjusting() == false) {
+                updateColorDisplayPanel();
+            }
+           
         }
 
     }

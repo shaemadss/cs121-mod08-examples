@@ -4,7 +4,11 @@ import javax.swing.JButton;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.awt.Color;
+/**
+ * Test class for DieButton development
+ * @author Luke Hindman
+ */
 @SuppressWarnings("serial")
 public class DieButtonTester extends JPanel {
 
@@ -21,8 +25,15 @@ public class DieButtonTester extends JPanel {
     /* Constructor */
     public DieButtonTester() {
 
+        /*
+         * Google RGB Color Picker https://g.co/kgs/seiAWc
+         */
+        Color gameboardGreen = new Color(6, 87, 18);
+
         this.myD6Die = new DieButton(6,d6FaceFiles);
+        myD6Die.setBackground(gameboardGreen);
         myD6Die.enableHideAfterRoll();
+
         this.add(myD6Die);
 
         revealButton = new JButton ("Reveal");
@@ -30,6 +41,8 @@ public class DieButtonTester extends JPanel {
 
         rollButton = new JButton ("Roll");
         this.add(rollButton);
+
+        this.setBackground(gameboardGreen);
 
         MyButtonListener mbl = new MyButtonListener();
         revealButton.addActionListener(mbl);
@@ -53,7 +66,7 @@ public class DieButtonTester extends JPanel {
 
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
+        JFrame frame = new JFrame("Die Button Tester by Luke Hindman");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(new DieButtonTester());
         frame.pack();
