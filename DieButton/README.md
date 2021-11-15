@@ -11,8 +11,8 @@ The screenshot above shows a sample GUI for this activity.  You may use the same
 
 + **DieButton()** The constructor must take an integer value for the number of sides and a String array that contains the file paths of png images with the indexes corresponding to the die face values. The image at index 0 will be used to represent a blank die.
 + **getFaceValue():** Return the integer face value of the internal Die object
-+ **enableHidAfterRoll()** Set an internal flag that changes the DieButton face to blank (image at index 0) after each roll of the dice
-+ **disableHidAfterRoll()** Reset an internal flag that updates the DieButton face to the image that cooresponds to the updated face value of the internal Die object after each roll.
++ **enableHideAfterRoll()** Set an internal flag that changes the DieButton face to blank (image at index 0) after each roll of the dice
++ **disableHideAfterRoll()** Reset an internal flag that updates the DieButton face to the image that cooresponds to the updated face value of the internal Die object after each roll.
 + **showFace():** Update the face image on the DieButton with the image that cooresponds to the current face value of the internal Die object
 + **rollDie()** Call the roll() method on the internal Die object.  If hide after roll flag is enabled, change the DieButton face image to blank (index 0) otherwise set the face image icon to the updated face value of the internal Die object after the roll has occurred.
 + **DieButtonListener class** call the rollDie() method when DieButton is clicked.
