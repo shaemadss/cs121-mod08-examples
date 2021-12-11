@@ -3,6 +3,7 @@ import javax.swing.border.Border;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 
+import java.awt.Color;
 import java.awt.Dimension;
 
 import java.awt.event.ActionEvent;
@@ -43,6 +44,7 @@ public class DieButton extends JButton {
 
         }
         this.setPreferredSize(new Dimension(112, 112));
+        this.setBackground(Color.white);
         
         /* Remove the border */
         this.setFocusPainted(false);
@@ -54,39 +56,22 @@ public class DieButton extends JButton {
     }
 
     /* Methods */
-
-    /**
-     * Return the integer face value of the internal Die object
-     * @return face value of the internal Die object
-     */
     public int getFaceValue() {
         return this.myDie.getFaceValue();
     }
 
-    /**
-     * Set an internal flag that changes the DieButton face to blank (image at index 0) after each roll of the dice
-     */
     public void enableHideAfterRoll() {
         this.hideAfterRoll = true;
     }
 
-    /**
-     * Reset an internal flag that changes updates the DieButton face to the image that cooresponds to the updated face value of the internal Die object after each roll.
-     */
     public void disableHideAfterRoll() {
         this.hideAfterRoll = false;
     }
 
-    /**
-     * Update the face image on the DieButton with the image that cooresponds to the current face value of the internal Die object
-     */
     public void showFace() {
         setIcon(myDieFaces[myDie.getFaceValue()]);
     }
 
-    /**
-     * Call the roll() method on the internal Die object.  If hide after roll flag is enable, change the DieButton face image to blank (index 0) otherwise set the face image icon to the updated face value of the internal Die object after the roll has occurred.
-     */
     public void rollDie() {
         this.myDie.roll();
         if (hideAfterRoll) {
@@ -104,9 +89,4 @@ public class DieButton extends JButton {
         }
 
     }
-
-
-    
-
-    
 }
